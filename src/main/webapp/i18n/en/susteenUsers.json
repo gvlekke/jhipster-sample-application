@@ -1,0 +1,26 @@
+
+{
+    "jhipsterSampleApplicationApp": {
+        "susteenUsers" : {
+            "home": {
+                "title": "Susteen Users",
+                "createLabel": "Create a new Susteen Users",
+                "createOrEditLabel": "Create or edit a Susteen Users"
+            },
+            "created": "A new Susteen Users is created with identifier {{ param }}",
+            "updated": "A Susteen Users is updated with identifier {{ param }}",
+            "deleted": "A Susteen Users is deleted with identifier {{ param }}",
+            "delete": {
+                "question": "Are you sure you want to delete Susteen Users {{ id }}?"
+            },
+            "detail": {
+                "title": "Susteen Users"
+            },
+            "username": "Username",
+            "email": "Email",
+            "password": "Password",
+            "clients": "Clients",
+            "templates": "Templates"
+        }
+    }
+}

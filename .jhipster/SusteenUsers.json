@@ -1,0 +1,40 @@
+{
+    "name": "SusteenUsers",
+    "fields": [
+        {
+            "fieldName": "username",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "email",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "password",
+            "fieldType": "String"
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipName": "clients",
+            "otherEntityName": "clients",
+            "relationshipType": "many-to-one",
+            "otherEntityField": "id"
+        },
+        {
+            "relationshipType": "one-to-many",
+            "relationshipName": "templates",
+            "otherEntityName": "templates",
+            "otherEntityRelationshipName": "susteenUsers"
+        }
+    ],
+    "changelogDate": "20181025133003",
+    "entityTableName": "susteen_users",
+    "dto": "no",
+    "pagination": "no",
+    "service": "no",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "clientRootFolder": "",
+    "applications": "*"
+}

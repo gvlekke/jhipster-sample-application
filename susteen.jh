@@ -1,0 +1,20 @@
+entity Clients {
+	name String
+}
+
+entity SusteenUsers {
+	username String,
+    email String,
+    password String
+}
+
+entity Templates {
+	name String,
+    file AnyBlob
+}
+
+relationship OneToMany {
+    SusteenUsers{templates} to Templates
+    
+    Clients{users} to SusteenUsers
+}
