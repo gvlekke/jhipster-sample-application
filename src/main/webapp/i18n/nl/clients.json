@@ -1,0 +1,23 @@
+
+{
+    "jhipsterSampleApplicationApp": {
+        "clients" : {
+            "home": {
+                "title": "Clients",
+                "createLabel": "Maak een nieuwe Clients",
+                "createOrEditLabel": "Maak of wijzig een Clients"
+            },
+            "created": "A new Clients is created with identifier {{ param }}",
+            "updated": "A Clients is updated with identifier {{ param }}",
+            "deleted": "A Clients is deleted with identifier {{ param }}",
+            "delete": {
+                "question": "Bent u zeker dat u Clients {{ id }} wilt verwijderen?"
+            },
+            "detail": {
+                "title": "Clients"
+            },
+            "name": "Name",
+            "users": "Users"
+        }
+    }
+}
