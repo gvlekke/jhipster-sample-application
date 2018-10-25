@@ -1,0 +1,26 @@
+
+{
+    "jhipsterSampleApplicationApp": {
+        "users" : {
+            "home": {
+                "title": "Users",
+                "createLabel": "Maak een nieuwe Users",
+                "createOrEditLabel": "Maak of wijzig een Users"
+            },
+            "created": "A new Users is created with identifier {{ param }}",
+            "updated": "A Users is updated with identifier {{ param }}",
+            "deleted": "A Users is deleted with identifier {{ param }}",
+            "delete": {
+                "question": "Bent u zeker dat u Users {{ id }} wilt verwijderen?"
+            },
+            "detail": {
+                "title": "Users"
+            },
+            "username": "Username",
+            "email": "Email",
+            "password": "Password",
+            "clients": "Clients",
+            "templates": "Templates"
+        }
+    }
+}

@@ -1,0 +1,40 @@
+<div class="row justify-content-center">
+    <div class="col-8">
+        <div *ngIf="templates">
+            <h2><span jhiTranslate="jhipsterSampleApplicationApp.templates.detail.title">Templates</span> {{templates.id}}</h2>
+            <hr>
+            <jhi-alert-error></jhi-alert-error>
+            <dl class="row-md jh-entity-details">
+                <dt><span jhiTranslate="jhipsterSampleApplicationApp.templates.name">Name</span></dt>
+                <dd>
+                    <span>{{templates.name}}</span>
+                </dd>
+                <dt><span jhiTranslate="jhipsterSampleApplicationApp.templates.file">File</span></dt>
+                <dd>
+                    <div *ngIf="templates.file">
+                        <a (click)="openFile(templates.fileContentType, templates.file)" jhiTranslate="entity.action.open">open</a>
+                        {{templates.fileContentType}}, {{byteSize(templates.file)}}
+                    </div>
+                </dd>
+                <dt><span jhiTranslate="jhipsterSampleApplicationApp.templates.users">Users</span></dt>
+                <dd>
+                    <div *ngIf="templates.users">
+                        <a [routerLink]="['/users', templates.users?.id, 'view']">{{templates.users?.id}}</a>
+                    </div>
+                </dd>
+            </dl>
+
+            <button type="submit"
+                    (click)="previousState()"
+                    class="btn btn-info">
+                <fa-icon [icon]="'arrow-left'"></fa-icon>&nbsp;<span jhiTranslate="entity.action.back"> Back</span>
+            </button>
+
+            <button type="button"
+                    [routerLink]="['/templates', templates.id, 'edit']"
+                    class="btn btn-primary">
+                <fa-icon [icon]="'pencil-alt'"></fa-icon>&nbsp;<span jhiTranslate="entity.action.edit"> Edit</span>
+            </button>
+        </div>
+    </div>
+</div>
